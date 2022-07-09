@@ -12,7 +12,7 @@ public class mini1 {
         for (int i = 1; i <= 9; i++) {
             for (int j = 1; j <= 9; j++) {
                 int A = i * j;
-                String aa = String.format("%d X %d = %d\t\t", j, i, A);
+                String aa = String.format("%d X %d = %d\t", j, i, A);
                 System.out.print(aa);
 
                 if (j == 9) {
