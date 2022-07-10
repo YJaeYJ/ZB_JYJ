@@ -34,10 +34,10 @@ public class mini6 {
             System.out.printf("[기호:3] 심상정: %.2f%%, (투표수: %s)\n", aa3 / (double) totalTicket * 100, aa3);
             System.out.printf("[기호:4] 안철수: %.2f%%, (투표수: %s)\n", aa4 / (double) totalTicket * 100, aa4);
 
-            if (rd == 1) {      //랜덤으로 1번이 나왔을때
+            if (rd == 1) {   
                 name = "이재명";
                 aa1 += map.get(name) + 1;
-                
+
             } else if (rd == 2) {
                 name = "윤석열";
                 aa2 += map.get(name) + 1;
@@ -51,7 +51,7 @@ public class mini6 {
                 aa4 += map.get(name) + 1;
             }
         }
-        
+
         if (aa1 > aa2 && aa1 > aa3 && aa1 > aa4) {
             name2 = "이재명";
         } else if (aa2 > aa1 && aa2 > aa3 && aa2 > aa4) {
