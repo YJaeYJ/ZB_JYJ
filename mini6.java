@@ -21,20 +21,20 @@ public class mini6 {
         map.put("안철수", 0);
 
         int aa1 = 0, aa2 = 0, aa3 = 0, aa4 = 0;     //  투표 수
-        int totalTicket = 10000;
+        double totalTicket = 10000;
         int rd = 0;
         String name = "";
         String name2 = "";
 
         for (int i = 0; i < totalTicket + 1; i++) {
             rd = random.nextInt(4) + 1;
-            System.out.printf("[투표진행율]: %.2f%%, %d명 투표 => %s\n", i / (double) totalTicket * 100, i, name);
-            System.out.printf("[기호:1] 이재명: %.2f%%, (투표수: %s)\n", aa1 / (double) totalTicket * 100, aa1);
-            System.out.printf("[기호:2] 윤석열: %.2f%%, (투표수: %s)\n", aa2 / (double) totalTicket * 100, aa2);
-            System.out.printf("[기호:3] 심상정: %.2f%%, (투표수: %s)\n", aa3 / (double) totalTicket * 100, aa3);
-            System.out.printf("[기호:4] 안철수: %.2f%%, (투표수: %s)\n", aa4 / (double) totalTicket * 100, aa4);
+            System.out.printf("[투표진행율]: %.2f%%, %d명 투표 => %s\n", i / totalTicket * 100, i, name);
+            System.out.printf("[기호:1] 이재명: %.2f%%, (투표수: %s)\n", aa1 / totalTicket * 100, aa1);
+            System.out.printf("[기호:2] 윤석열: %.2f%%, (투표수: %s)\n", aa2 / totalTicket * 100, aa2);
+            System.out.printf("[기호:3] 심상정: %.2f%%, (투표수: %s)\n", aa3 / totalTicket * 100, aa3);
+            System.out.printf("[기호:4] 안철수: %.2f%%, (투표수: %s)\n", aa4 / totalTicket * 100, aa4);
 
-            if (rd == 1) {   
+            if (rd == 1) {
                 name = "이재명";
                 aa1 += map.get(name) + 1;
 
