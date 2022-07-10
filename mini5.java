@@ -43,12 +43,7 @@ public class mini5 {
             }
         }
         for (int i = 1; i < dayMax + 1; i++) {
-            if (i < 10) {
-                day = ("0" + i);
-                System.out.print(day);
-            } else {
-                System.out.print(i);
-            }
+            System.out.printf("%02d", i);
             System.out.print("\t");
             week3++;
             if (week3 % 7 == 0) {
