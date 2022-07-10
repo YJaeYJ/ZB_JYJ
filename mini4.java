@@ -35,23 +35,12 @@ public class mini4 {
             year1 = year1 % 100;
             sb.append(year1);
         }
-        if (month1 < 10) {
-            month2 = ("0" + month1);
-            sb.append(month2);
-        } else if (month1 > 12) {
-            System.out.println("잘못된 출생월 입니다.");
-            error = true;
+        if (month1 < 13 && day1 < 32) {
+            sb.append(String.format("%02d",month1));
+            sb.append(String.format("%02d", day1));
         } else {
-            sb.append(month1);
-        }
-        if (day1 < 10) {
-            day2 = ("0" + day1);
-            sb.append(day2);
-        } else if (day1 > 31) {
-            System.out.println("잘못된 출생일 입니다.");
+            System.out.println("잘못된 입력값 입니다.");
             error = true;
-        } else {
-            sb.append(day1);
         }
         if (gender1.equals("m")) {
             gender2 = "-3";
@@ -60,11 +49,9 @@ public class mini4 {
             gender2 = "-4";
             sb.append(gender2);
         } else {
-            System.out.println("잘못된 성별입니다.");
+            System.out.println("잘못된 성별 입니다.");
             error = true;
-
         }
-
         if (error == false) {
             for (int i = 0; i < 6; i++) {
                 sb.append(random.nextInt(10));
