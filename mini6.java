@@ -62,7 +62,7 @@ public class mini6 {
             name2 = "안철수";
         }
 
-        System.out.printf("[투표결과] 당선인: %s", name2);
+        System.out.println("[투표결과] 당선인: " + name2);
 
 
     }
