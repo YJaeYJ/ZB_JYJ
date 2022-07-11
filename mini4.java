@@ -9,7 +9,7 @@ public class mini4 {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
         StringBuffer sb = new StringBuffer();
-        
+
         String gender2 = "";
         boolean error = false;
 
