@@ -10,7 +10,6 @@ public class mini5 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String day = "";
         int week3 = 0;
         int dayMax = 0;
         int year = 0;
